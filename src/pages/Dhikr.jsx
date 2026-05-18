@@ -25,7 +25,7 @@ export default function Dhikr() {
   return (
     <div className="page-container bg-slate-950">
       {/* Header */}
-      <div className="bg-gradient-to-b from-slate-900 to-slate-950 px-5 pt-14 pb-4">
+      <div className="bg-gradient-to-b from-slate-900 to-slate-950 px-5 pt-safe pb-4">
         <h1 className="text-white text-xl font-bold mb-1">Dhikr & Invocations</h1>
         <p className="text-slate-400 text-sm">الذكر والدعاء</p>
 

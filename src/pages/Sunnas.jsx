@@ -27,7 +27,7 @@ export default function Sunnas() {
   return (
     <div className="page-container bg-slate-950">
       {/* Header */}
-      <div className="bg-gradient-to-b from-amber-900/30 to-slate-950 px-5 pt-14 pb-4">
+      <div className="bg-gradient-to-b from-amber-900/30 to-slate-950 px-5 pt-safe pb-4">
         <div className="flex items-center gap-3 mb-2">
           <span className="text-3xl">☀️</span>
           <div>

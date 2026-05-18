@@ -38,7 +38,7 @@ export default function Quran() {
   return (
     <div className="page-container bg-slate-950">
       {/* Header */}
-      <div className="bg-gradient-to-b from-emerald-900/40 to-slate-950 px-5 pt-14 pb-6">
+      <div className="bg-gradient-to-b from-emerald-900/40 to-slate-950 px-5 pt-safe pb-6">
         <div className="flex items-center gap-3 mb-2">
           <div className="w-10 h-10 bg-emerald-500/10 border border-emerald-500/20 rounded-xl flex items-center justify-center">
             <BookOpen size={20} className="text-emerald-400" />

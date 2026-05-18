@@ -63,7 +63,7 @@ export default function Home({ onNavigate }) {
       {/* Header */}
       <div className="relative overflow-hidden">
         <IslamicPattern />
-        <div className="relative z-10 px-5 pt-14 pb-8">
+        <div className="relative z-10 px-5 pt-safe pb-8">
           <div className="flex items-center justify-between mb-6">
             <div>
               <div className="flex items-center gap-2 text-emerald-400 text-sm font-medium mb-1">

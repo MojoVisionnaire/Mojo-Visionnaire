@@ -5,16 +5,25 @@
 @layer base {
   * {
     -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
   }
 
-  body {
+  html, body {
     @apply bg-slate-950 text-white font-sans;
     overscroll-behavior: none;
+    overscroll-behavior-y: none;
+    height: 100%;
+  }
+
+  #root {
+    height: 100%;
   }
 
   :root {
     --safe-top: env(safe-area-inset-top, 0px);
     --safe-bottom: env(safe-area-inset-bottom, 0px);
+    --safe-left: env(safe-area-inset-left, 0px);
+    --safe-right: env(safe-area-inset-right, 0px);
   }
 }
 
@@ -43,7 +52,8 @@
   }
 
   .page-container {
-    @apply min-h-screen pb-24;
+    @apply min-h-screen;
+    padding-bottom: calc(5rem + env(safe-area-inset-bottom, 0px));
   }
 
   .gradient-emerald {
@@ -74,6 +84,15 @@
 
   .text-shadow {
     text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  }
+
+  /* Safe area padding for notched phones (iPhone, Android) */
+  .pt-safe {
+    padding-top: max(3.5rem, calc(env(safe-area-inset-top, 0px) + 1rem));
+  }
+
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
   }
 }
 
